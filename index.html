@@ -17,8 +17,8 @@
     <div class="head-img">
         <h4><b>Pre</b>costimizeable work</h4>
     </div>
-    <nav>
-        <ul>
+    <nav id="navbar">
+        <ul id="unorder">
             <li><a href="#page-1">Home</a></li>
             <li><a href="#page-1">Services</a></li>
             <li><a href="#page-1">About Us</a></li>
@@ -27,6 +27,7 @@
                 <input type="text" placeholder="Search.." name="search">
             </form>
         </ul>
+        <h1 id="openit">=</h1>
     </nav>
 </header>
 
@@ -119,7 +120,19 @@
 </section>
 
 
+<script>
+let navbar = document.getElementById('navbar');
+let openit = document.getElementById('poenit');
+let ul = document.getElementById('unorder');
 
+openit.addEventListener('click', (e) => {
+    navbar.classList.toggle('header');
+    ul.classList.toggle('block');
+});
+
+
+
+</script>
 </body>
 
 </html>

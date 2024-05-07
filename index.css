@@ -46,7 +46,8 @@ header {
     padding: 10px 3px;
     overflow: hidden;
     position: sticky;
-    top: 10px;
+    top: 0px;
+    z-index: 1000;
 }
 
 /* .head-img {
@@ -145,7 +146,7 @@ input[type="text"] {
 
 
 .h-text {
-    font-size: 40px;
+    font-size: 55px;
     font-family: var(--heading);
     color: var(--text-color);
 }
@@ -195,7 +196,7 @@ input[type="text"] {
 
 .about {
     width: 100%;
-    height: 80vh;
+    height: auto;
     background: hsl(213.1deg 23.2% 24.51%);
     position: relative;
     bottom: 66px;
@@ -412,4 +413,92 @@ input[type="text"] {
     height: auto;
     position: relative;
 
+}
+
+/* js practice */
+h1{
+    font-size: 30px;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: none;
+}
+/* ==================================================================================================================================================== */
+
+
+@media (max-width:900px) {
+    .work-content{
+        flex-direction: column;
+        padding: 20px; 
+    }
+    
+    .w-image{
+        display: flex;
+        justify-content: center;
+    }
+    .w-image img{
+        width: auto;
+    }
+    
+    .contact-content h2{
+        font-size: 30px;
+        
+    }
+    
+    .contact-content p{
+        width: auto;
+    }
+    .services-content h2{
+        font-size: 30px;
+        
+    }
+    
+    .services-content p{
+        width: auto;
+    }
+}
+@media (max-width:790px) {
+    .about-content{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        display: block;
+    }
+    .header{
+        background: var(--bg-color);
+        flex-direction: column;
+    }
+    .w-image img {
+        width: 100%;
+}}
+@media (max-width:610px) {
+    .header{
+        width: 100vw;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+    }
+    
+    .block{
+        display: block;
+    }
+    .hero-btn{
+        padding: 0;
+    }
+    .hero-btn{
+        padding: 0;
+    }
+}
+@media (max-width:610px) {
+    .h-space{
+margin: 0;
+    }
+
+    .hero-btn button{
+        margin-left: 0;
+        
+    }
+    .hero-btn p{
+        margin-left: 0;
+    }
 }
