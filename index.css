@@ -16,7 +16,7 @@ html {
     --text-color: #ffff;
     --heading: "Poetsen One", sans-serif;
     --paragraph: "Lato", sans-serif;
-    ;
+
 }
 
 .heading {
@@ -39,7 +39,6 @@ header {
     background: transparent;
     box-shadow: 2px 3px 40px;
     height: auto;
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -50,10 +49,7 @@ header {
     z-index: 1000;
 }
 
-/* .head-img {
-
-} */
-
+/* .head-img  */
 .head-img b {
     color: hwb(347 28% 11%);
     font-size: 23px;
@@ -297,6 +293,7 @@ input[type="text"] {
 .services-content p {
     color: var(--text-color);
     width: 50%;
+    text-align: center;
     font-family: var(--paragraph);
 }
 
@@ -415,90 +412,206 @@ input[type="text"] {
 
 }
 
+.contact-content p {
+    text-align: center;
+}
+
 /* js practice */
-h1{
+h1 {
     font-size: 30px;
     color: var(--bg-color);
     cursor: pointer;
     display: none;
 }
+
 /* ==================================================================================================================================================== */
 
-
-@media (max-width:900px) {
-    .work-content{
-        flex-direction: column;
-        padding: 20px; 
+@media only screen and (max-width:950px) {
+    nav ul li a {
+        font-size: 13px;
     }
-    
-    .w-image{
-        display: flex;
+
+    .hero-content {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    .hero {
         justify-content: center;
     }
-    .w-image img{
-        width: auto;
+
+    .hero-btn button {
+        margin-left: 0;
     }
-    
-    .contact-content h2{
-        font-size: 30px;
-        
-    }
-    
-    .contact-content p{
-        width: auto;
-    }
-    .services-content h2{
-        font-size: 30px;
-        
-    }
-    
-    .services-content p{
-        width: auto;
+
+    .hero-btn p {
+        margin-left: 0;
     }
 }
-@media (max-width:790px) {
-    .about-content{
-        grid-template-columns: 1fr;
+
+@media only screen and (max-width:850px) {
+    nav ul li a {
+        font-size: 15px;
     }
-    h1{
-        display: block;
-    }
-    .header{
-        background: var(--bg-color);
-        flex-direction: column;
-    }
-    .w-image img {
-        width: 100%;
-}}
-@media (max-width:610px) {
-    .header{
-        width: 100vw;
-    }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         display: none;
     }
-    
-    .block{
-        display: block;
-    }
-    .hero-btn{
+
+    .hero-btn {
         padding: 0;
-    }
-    .hero-btn{
-        padding: 0;
-    }
-}
-@media (max-width:610px) {
-    .h-space{
-margin: 0;
     }
 
-    .hero-btn button{
-        margin-left: 0;
-        
+    .hero-btn {
+        padding: 0;
     }
-    .hero-btn p{
-        margin-left: 0;
+
+    h1 {
+        display: block;
     }
 }
+
+
+@media only screen and (max-width:900px) {
+    .work-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .w-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .w-image img {
+        width: auto;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+
+    }
+
+    .contact-content p {
+        width: auto;
+    }
+
+    .services-content h2 {
+        font-size: 30px;
+
+    }
+
+    .services-content p {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:790px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        background: var(--bg-color);
+        flex-direction: column;
+    }
+
+    .w-image img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+
+    .hero-btn button {
+        margin-left: 0;
+
+    }
+
+    .hero-btn p {
+        margin-left: 0;
+    }
+
+    .services-content h2,
+    .contact-content h2 {
+        font-size: 25px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:590px) {
+    .h-text {
+        font-size: 35px;
+    }
+
+    .h-space {
+        margin: 0;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    
+    .a-box p {
+        text-align: center;
+    }
+    .about-content{
+        padding: 10px;
+    }
+}
+
+@media only screen and(max-width:470px) {
+
+    .h-text {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:440px) {
+
+    .h-text {
+        font-size: 35px;
+
+    }
+    
+    .services-content h2,
+    .contact-content h2 {
+        font-size: 20px;
+    }
+
+.services-content p,
+.contact-content p {
+    font-size: 12px;
+}
+}
+@media only screen and (max-width:400px) {
+
+    .h-text {
+        font-size: 30px;
+
+    }
+
+
+}
+@media only screen and (max-width:290px) {
+    
+    .h-text {
+        font-size: 22px;
+        
+    }
+
+    .hero-btn button {
+        padding: 14px;
+
+}}
