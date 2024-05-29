@@ -225,13 +225,18 @@ input[type="text"] {
 }
 
 .a-ball {
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.a-ball span{
     width: 70px;
     height: 70px;
+    border-radius: 50%;
     background: hsl(213.1deg 23.2% 24.51%);
-    /* border: 10px solid #ffff; */
-    display: block;
-    margin: auto;
+    top: 30px;
+    position: relative;
 }
 
 /* ================================================================================================================================= */
@@ -521,6 +526,11 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 729px) {
+    .h-text{
+        font-size: 45px;
+    }
+}
 @media only screen and (max-width:600px) {
 
 
@@ -595,7 +605,7 @@ h1 {
     font-size: 12px;
 }
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:435px) {
 
     .h-text {
         font-size: 30px;
@@ -604,14 +614,26 @@ h1 {
 
 
 }
-@media only screen and (max-width:290px) {
-    
+@media only screen and (max-width :352px){
+    .hero{
+        justify-content: end;
+    }
+}
+@media only screen and (max-width :322px)
+{
     .h-text {
         font-size: 22px;
-        
     }
+}
+@media only screen and (max-width:290px) {
+    
+  
 
     .hero-btn button {
         padding: 14px;
-
-}}
+    }
+        .hero {
+            justify-content: right;
+            padding: 0 55px
+        }
+}
