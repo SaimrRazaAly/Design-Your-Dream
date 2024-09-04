@@ -496,8 +496,8 @@ h1 {
     left: 0;
     top: 0;
     height: 100%;
-    padding: 50px 10px;
-    justify-content: space-around;
+    padding: 10px 10px;
+    justify-content: center;
 
   }
   .block {

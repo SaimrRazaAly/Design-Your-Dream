@@ -20,7 +20,8 @@ closeit.onclick = () => {
 };
 window.onscroll = () => {
   if (window.scrollY > 0) {
-    header.style.background = "#ffff";
+    header.style.background = "hwb(275 13% 21%)";
+    header.style.padding = "20px 10px";
     header.style.color = "black";
   } else {
     header.style.background = "transparent";
