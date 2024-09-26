@@ -97,13 +97,12 @@ header nav ul li a:hover {
 
 /* dynamic class using js */
 .scrolled {
-/* background:rgba(0, 0, 0, 0.219); */
-backdrop-filter: blur(30px);
+  background: rgba(0, 0, 0);
   padding: 10px 20px;
   z-index: 100;
 }
 
-/* hero-section */
+/* ===================== hero-section =================== */
 .hero {
   width: 100%;
   height: 100vh;
@@ -172,7 +171,7 @@ object-fit: cover;
   z-index: -2;
   filter: brightness(0.5);
 }
-/* ============================== WROK SECTION ============================= */
+/* ================== WROK SECTION ===================== */
 .work {
   width: 100%;
   background: var(--dark-gray-color);
@@ -214,7 +213,7 @@ object-fit: cover;
   background: var(--dark-gray-color);
 }
 
-/* ============================ servces section ================================ */
+/* =================== servces section ========================== */
 .services-banner {
   width: 100%;
   height: 70vh;
@@ -286,7 +285,7 @@ object-fit: cover;
   text-align: justify;
 }
 
-/* ==================================== FAQ SECTION ========================================= */
+/* ======================= FAQ SECTION ============================= */
 .faq-section {
   background: var(--dark-gray-color);
   padding: 100px;
@@ -295,10 +294,10 @@ object-fit: cover;
 .faq-content {
   margin-top: 20px;
 }
-.faq-heading {
+.sec-heading {
   text-align: center;
 }
-.faq-heading h2 {
+.sec-heading h2 {
   font-size: var(--text-heading);
   font-family: var(--paragraph);
   color: var(--text-color);
@@ -345,4 +344,122 @@ object-fit: cover;
 }
 .rotate {
   transform: rotate(45deg);
+}
+
+/* ======================== CONTACT SECTION ========================= */
+.contact-content {
+  padding: 100px;
+}
+.contact-heading h2 {
+  color: var(--dark-gray-color);
+}
+
+.contact-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  padding: 0 40px;
+  align-items: center;
+}
+.contact-left {
+  flex-basis: 60%;
+}
+.contact-left h2 {
+  font-size: var(--text-min-heaading);
+  font-family: var(--heading);
+  margin-bottom: 10px;
+}
+.contact-left p {
+  font-family: var(--paragraph);
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.contact-links .link {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.contact-links .link img {
+  width: 30px;
+  border-radius: 50%;
+}
+.contact-links .link a {
+  text-decoration: none;
+  color: var(--dark-gray-color);
+  font-weight: 900;
+  font-size: 16px;
+}
+.contact-right {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-feilds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  padding: 20px;
+}
+
+.form-feilds input,
+textarea {
+  padding: 20px 20px;
+  border-radius: 10px;
+  outline: none;
+  /* border: none; */
+  border: 2px solid var(--dark-gray-color);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--paragraph);
+}
+
+.form-btn {
+  border: none;
+  outline: none;
+  padding: 12px 28px;
+  background: var(--dark-gray-color);
+  color: var(--text-color);
+  font-family: var(--paragraph);
+  font-size: 18px;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: var(--local-transition);
+}
+.form-btn:hover{
+  opacity: 0.9;
+}
+
+
+/* ================= FOOTER ================ */
+.foot-cotent {
+  background: var(--dark-gray-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+ font-family: var(--paragraph);
+ font-size: 14px;
+}
+
+.foot2 {
+  display: flex;
+  gap: 10px;
+}
+
+.foot2 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.foot2 span {
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--black-coral);
 }
