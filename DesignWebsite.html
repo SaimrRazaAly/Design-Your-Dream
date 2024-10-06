@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,11 @@
   </head>
 
   <body>
+    <div class="video-banner"><video src="images/19227363-hd_1920_1080_60fps.mp4" autoplay muted loop > </video>
     <header id="navbar">
       <nav>
         <div class="nav-logo"><h2>LOGO</h2></div>
-        <ul>
+        <ul id="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">How It Works</a></li>
           <li><a href="#">Services</a></li>
@@ -27,15 +28,16 @@
           <div class="search-box">
             <input type="text" placeholder="Seacrh...." />
             <img src="images/search.svg" alt="" />
-          </div>
+        </div>
         </ul>
+        <div class="hamburger" onclick="showNav()"><h2 >=</h2></div>
       </nav>
     </header>
 
     <!-- =====================  hero section ======================  -->
 
     <section id="home" class="hero">
-      <div class="video-banner"><video src="images/19227363-hd_1920_1080_60fps.mp4" autoplay muted loop> </video></div>
+    
       <div class="hero-content">
         <div class="hero-text">Design your eyeball will thank for you</div>
         <button class="call-to-action">Get Stared Today</button>
@@ -45,6 +47,7 @@
         </p>
       </div>
     </section>
+  </div>
 
     <!-- ======================  work sectionn  ====================== -->
 
@@ -82,12 +85,7 @@
             ipsum placeat soluta inventore excepturi similique voluptas
             asperiores impedit ducimus saepe officia tempore voluptatum itaque.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Necessitatibus, suscipit accusamus quasi quod blanditiis temporibus
-            ipsum placeat soluta inventore excepturi similique voluptas
-            asperiores impedit ducimus saepe officia tempore voluptatum itaque.
-          </p>
+     
         </div>
       </div>
       <div class="services-banner banner-2">
@@ -97,7 +95,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quo
             natus qui.
           </p>
-          <button class="call-to-action" >Get Stared Today</button>
+          <button class="call-to-action pinkish" >Get Stared Today</button>
         </div>
       </div>
     </section>
@@ -128,7 +126,7 @@
       <div class="form-feilds">
         <input type="text" placeholder="Enter Your Name"  required>
         <input type="email" placeholder="Enter Your email" required>
-        <textarea name="" id="" cols="20" rows="5" placeholder="Message..."></textarea>
+        <textarea name="" id="" cols="20" rows="7" placeholder="Message..."></textarea>
         
       </div>
       <button class="form-btn">Submit</button>
@@ -155,6 +153,6 @@
 </div>
   </div>
 </footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
