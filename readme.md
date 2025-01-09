@@ -1,6 +1,6 @@
 # Design Your Dreams
 
-![Sample Image](image/demo.JPG)
+![Sample Image](images/demo.JPG)
 
 This project is a responsive and visually appealing multi-section website designed for creative agencies or businesses. Built using HTML, CSS, and JavaScript, it provides an engaging user experience with the following features:
 
